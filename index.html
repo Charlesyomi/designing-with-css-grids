@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    body{
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        background-color: #2D2D2D;
+    }
+   .container{
+       
+       margin: auto;
+       display: grid;
+       width: 20em;
+       height: 15em;
+       grid-template-columns: repeat(9,1fr);
+       grid-template-rows: 1fr .5fr .6fr;
+       gap: .5em;
+
+   }
+
+   .red{
+       grid-area: 1/1 /span 1/span 6;  /* row-start/column-start/row span/column-span */
+       background-color: crimson;
+   }
+   .orange{
+       grid-area: 1/7/span 1/span 3;
+       background-color: orange;
+   }
+
+   .green{
+       grid-area: 2/1/span 2/span 4;
+       background-color: green;
+   }
+   
+   .blue-1{
+        grid-area: 2/5/span 1/span 5;
+        background-color: #00C4D2;
+   }
+   .blue-2{
+        grid-area: 3/5/span 1/span 5;
+        background-color: #00C4D2;
+   }
+        
+</style>
+<body>
+    <div class="container">
+        <div class="red"></div>
+        <div class="orange"></div>
+        <div class="green"></div>
+        <div class="blue-1"></div>
+        <div class="blue-2"></div>
+    </div>
+</body>
+</html>
